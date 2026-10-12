@@ -1,0 +1,8 @@
+numpy
+torch
+gymnasium[atari,accept-rom-license,other]
+ale-py
+stable-baselines3
+opencv-python
+matplotlib
+pandas
