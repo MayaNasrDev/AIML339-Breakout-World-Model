@@ -60,7 +60,7 @@ def evaluate_agent(model_file, agent_name):
         action_counts = np.zeros(4,dtype=int) #wondering when deterministic what the aciton being chosen most is
         
         while not terminated and not truncated:
-            # deterministic so evaluation isn't adding extra action randomness
+            # stochastic the agent is able to explore different moves
             action, _ = model.predict(observation, deterministic=False)
             action_counts[int(action)] +=1
 
